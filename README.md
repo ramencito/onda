@@ -2,6 +2,8 @@
 
 **Reproductor de música móvil (PWA) con interfaz estilo Spotify, diseñado para escuchar sin datos: descarga playlists completas de una sola vez.**
 
+🌐 **En vivo:** **https://ramencito.github.io/onda/**
+
 En vez de bajar canción por canción, abres una playlist, tocas **Descargar** y queda toda guardada en tu teléfono para escucharla sin conexión (igual que Spotify Premium).
 
 ---
@@ -45,6 +47,15 @@ npm run dev        # arranca en http://localhost:5173 (accesible desde la red lo
 npm run build      # genera dist/ (verifica tipos + compila)
 npm run preview    # sirve dist/ en http://localhost:4173
 ```
+
+## Despliegue (GitHub Pages)
+
+```bash
+./scripts/deploy-pages.sh   # build + publica en https://ramencito.github.io/onda/
+```
+
+El sitio se publica desde la rama `gh-pages` (no usa Actions, así no requiere el
+permiso especial de `workflow`). Tras el push, Pages tarda ~30-60 s en actualizar.
 
 ## Cómo funciona las descargas
 
